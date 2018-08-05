@@ -1,0 +1,247 @@
+/* General */
+html, body {
+  height: 100%;
+	margin: 0;
+}
+
+body {
+	color: #777777;
+	background-image: url("./images/qbkls.png");
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+  width: 920px;
+  padding: 5px 20px 20px 20px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: white;
+	margin-bottom: auto;
+}
+
+a {
+	color: #4aaaa5;
+}
+
+a.nav {
+	color: #777777;
+	text-decoration: none;
+}
+
+h1, h2, a.nav:hover {
+	color: #4aaaa5;
+}
+
+hr {
+	border: 1.5px solid #d3d3d3;
+	margin-bottom: 10px; 
+}
+
+/* Header */
+header {
+	background: white;
+	top: 0;
+	left: 0;
+	border-bottom: 2.5px solid #cccccc;
+	width: 100%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inside-header {
+	width: 960px;
+	margin: 0 auto;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	background: #4aaaa5; 
+	color: white;
+	position: relative;
+	font-size: 26px;
+	width: 250px;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+	display: inline-block;
+}
+
+#nav {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#footer {
+	background: #666666;
+	bottom: 0px;
+	width: 100%;
+	border-top: 8px solid #4aaaa5;
+	text-align: center;
+	color: #ececec;
+	padding: 20px 0 5px;
+	height: 20px;
+	margin-top: 20px;
+	flex-shrink: 0;
+}
+
+/* Index Page */
+
+#bio {
+	float: left;
+	padding: 0 10px 5px 0;
+	width: 20%;
+	height: auto;
+}
+
+/* Contact Page */
+
+input {
+	width: 100%;
+	color: #777777;
+	padding: 5px;
+	margin: 5px 0 10px;
+	border: .5px solid #d3d3d3;
+}
+
+textarea {
+	width: 100%;
+	color: #777777;
+	padding: 5px 5px 50px;
+	margin: 5px 0 10px;
+	border: .5px solid #d3d3d3;
+}
+
+.button {
+	color: white;
+	padding: 10px;
+	background: #4aaaa5;
+	width: 100px;
+	opacity: 1;
+  transition: 0.3s;
+}
+
+.button:hover {
+	background: #777777;
+}
+
+/* Portfolio Page */
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 300px;
+	position: relative;
+	order: 1;
+	float: left;
+}
+
+.portfolio {
+	height: auto; 
+	width: 320px;
+	margin: 10px 20px 10px 0;
+}
+
+.banner {
+	background: #4aaaa5;
+	color: white;
+	padding: 15px 0;
+	position: absolute;
+	bottom: 25px;
+	z-index: 1;
+	width: 320px;
+	text-align: center;
+}
+
+/* Media Queries */ 
+@media screen and (max-width: 980px) {
+	header {
+		background: white;
+		top: 0;
+		left: 0;
+		border-bottom: 2.5px solid #cccccc;
+		width: 100%;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+
+	.inside-header {
+		width: 79%;
+		margin: 0 auto;
+		background: white;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.wrapper {
+		width: 75%;
+		padding: 5px 20px 20px 20px;
+		margin: 0 auto;
+		margin-top: 10px;
+		background: white;
+		margin-bottom: auto;
+	}
+
+	#bio {
+		float: left;
+		padding: 0 10px 5px 0;
+		width: 30%;
+		height: auto;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	#bio {
+		float: left;
+		padding: 0 10px 5px 0;
+		width: 40%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		background: white;
+		top: 0;
+		left: 0;
+		border-bottom: 2.5px solid #cccccc;
+		width: 100%;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		position: static;
+	}
+
+	.inside-header {
+		width: 100%;
+		margin: 0 auto;
+		background: white;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#logo {
+		background: #4aaaa5; 
+		color: white;
+		position: relative;
+		font-size: 26px;
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+	}
+	
+	#nav {
+		flex-wrap: wrap;
+		margin: 0 auto;
+		padding: 15px;
+	}
+
+	#bio {
+		padding: 0 10px 5px 0;
+		width: 100%;
+		height: auto;
+	}
+}
